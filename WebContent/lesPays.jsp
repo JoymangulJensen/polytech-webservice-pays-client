@@ -13,6 +13,7 @@
             ${pays.nomPays}
         </option>
     </c:forEach>
+    texte
 </select>
 </body>
 </html>

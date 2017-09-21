@@ -10,7 +10,7 @@ package fr.polytech.pays.ws;
 
 public class PaysServiceExceptionException extends java.lang.Exception{
 
-    private static final long serialVersionUID = 1505805240558L;
+    private static final long serialVersionUID = 1505997868286L;
     
     private fr.polytech.pays.ws.PaysServiceStub.PaysServiceException faultMessage;
 
