@@ -84,11 +84,6 @@ public class ListePaysController extends HttpServlet {
 		}
 		// On récupère les données dans un tableau 
 		Pays[]  tabProp = sr.get_return();
-		// on transforme en liste 
-		for ( int i=0; i < tabProp.length;i++)
-		   {
-			listeProp.add(tabProp[i]);
-		   }
 		request.setAttribute("mesPays", tabProp);
 
 
