@@ -19,26 +19,19 @@
 	<div class="container-fluid">
 		<div class="row justify-content-md-center">
 			<div class="col-md-auto">
-				<h1>Les pays</h1>
+			<br><br>
+				<h1 class="text-dark" >Les Pays</h1>
 			</div>
 		</div>
 		<br> <br>
 		<div class="row justify-content-md-center">
-			<select id="pays" name="paysitems">
-				<c:forEach items="${mesPays}" var="pays">
-					<option value="${pays.nomPays}">
-            			${pays.nomPays}
-       			 	</option>
-				</c:forEach>
-			</select>
-
-			<div class="btn-group">
-				<button type="button" class="btn btn-danger dropdown-toggle"
+			<div class="col-md-7 btn-group">
+				<button type="button" class="btn btn-info dropdown-toggle col"
 					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Veuillez choisir un pays
 				</button>
 					
-				<div class="dropdown-menu scrollable-menu">
+				<div class="dropdown-menu scrollable-menu col">
 					<c:forEach items="${mesPays}" var="pays">
 						<a class="dropdown-item" href="getPays?nomPays=${pays.nomPays}">${pays.nomPays}</a>
 					</c:forEach>

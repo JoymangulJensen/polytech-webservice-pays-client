@@ -86,10 +86,6 @@ public class ListePaysController extends HttpServlet {
 		Pays[]  tabProp = sr.get_return();
 		request.setAttribute("mesPays", tabProp);
 
-
-
-		//request.setAttribute("pays", String.valueOf(r));
-
 		this.getServletContext()
 		.getRequestDispatcher("/lesPays.jsp")
 		.forward(request, response);
