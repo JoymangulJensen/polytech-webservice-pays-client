@@ -19,31 +19,34 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<ol class="col breadcrumb">
-				<li class="breadcrumb-item"><a href="index.jsp">Accueil</a></li>
-				<li class="breadcrumb-item active">${pays.nomPays}</li>
-			</ol>
-		</div>
-
-		<div class="row justify-content-md-center">
-			<div class="col-md-auto">
-				<h1>${pays.nomPays} </h1>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	    	<a class="navbar-brand" href="index.jsp">Accueil</a>
+	    	<div class="row justify-content-md-center">
+				<div class="col-md-12 btn-group">
+					
+				</div>
 			</div>
-		</div>
+	    </nav>
 		<br> <br>
 		<div class="row justify-content-md-center">
-			<h1>${pays.nomCapitale}</h1>
-			<h1>${pays.nomContinent}</h1>
-			<h1>${pays.nbhabitants}</h1>
-
+			<h1>${pays.nomPays} </h1>
 		</div>
-
+		
+		<div class="container">
+	     	<div class="row">
+	     		<h1>Continent : ${pays.nomContinent}</h1>
+	     	</div>
+	     	<div class="row">
+	     		<h1>Capitale : ${pays.nomCapitale}</h1>
+	     	</div>
+	     	<div class="row">
+	     		<h1>Nombre d'habitants : ${pays.nbhabitants}</h1>
+	     	</div>
+     	</div>
+	     	
 
 
 	</div>
-
-
 
 
 

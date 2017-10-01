@@ -16,34 +16,41 @@
 
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row justify-content-md-center">
-			<div class="col-md-auto">
-			<br><br>
-				<h1 class="text-dark" >Les Pays</h1>
-			</div>
-		</div>
-		<br> <br>
-		<div class="row justify-content-md-center">
-			<div class="col-md-7 btn-group">
-				<button type="button" class="btn btn-info dropdown-toggle col"
-					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Veuillez choisir un pays
-				</button>
-					
-				<div class="dropdown-menu scrollable-menu col">
-					<c:forEach items="${mesPays}" var="pays">
-						<a class="dropdown-item" href="getPays?nomPays=${pays.nomPays}">${pays.nomPays}</a>
-					</c:forEach>
+	<div class="">
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	    	<a class="navbar-brand" href="index.jsp">Accueil</a>
+	    	<div class="row justify-content-md-center">
+				<div class="col-md-12 btn-group">
+					<button type="button" class="btn btn-info dropdown-toggle col"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Choisir un pays
+					</button>
+						
+					<div class="dropdown-menu scrollable-menu col">
+						<c:forEach items="${mesPays}" var="pays">
+							<a class="dropdown-item" href="getPays?nomPays=${pays.nomPays}">${pays.nomPays}</a>
+						</c:forEach>
+					</div>
 				</div>
 			</div>
-		</div>
-
-
-
+	    </nav>
+	    <br><br><br>
+		<div class="container">
+	     	<div class="row">
+		     	<c:forEach items="${mesPays}" var="pays">
+			        <div class="col-md-4 un_pays">
+			          <h2>${pays.nomPays}</h2>
+			          <p>Continent : ${pays.nomContinent}</p>
+			          <p>Capitale : ${pays.nomCapitale}</p>
+			          <p>Nombre d'habitants : ${pays.nbhabitants}</p>
+			          <p><a class="btn btn-secondary" href="getPays?nomPays=${pays.nomPays}" role="button">Détails</a></p>
+			        </div>
+		        </c:forEach>
+	     	</div>
+		     
+	    </div>
+    
 	</div>
-
-
 
 
 
