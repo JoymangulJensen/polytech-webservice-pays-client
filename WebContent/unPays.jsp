@@ -27,25 +27,28 @@
 				</div>
 			</div>
 	    </nav>
-		<br> <br>
+		<br> <br><br>
 		<div class="row justify-content-md-center">
 			<h1>${pays.nomPays} </h1>
 		</div>
-		
+		<br>
 		<div class="container">
-	     	<div class="row">
-	     		<h1>Continent : ${pays.nomContinent}</h1>
+			<div class="row">
+		     	<div class="col-md-5">
+		     		<h3>Continent : ${pays.nomContinent}</h3>
+		     		<h3>Capitale : ${pays.nomCapitale}</h3>
+		     		<h3>Nombre d'habitants : ${pays.nbhabitants}</h3>
+		     	</div>
+		     	<div class="col-md-7">
+		     		<iframe style="border: 0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q&q=${pays.nomPays}" width="600" height="450" frameborder="0"></iframe>
+					<!--  mon api key google map
+					AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q -->
+		     	</div>
 	     	</div>
-	     	<div class="row">
-	     		<h1>Capitale : ${pays.nomCapitale}</h1>
-	     	</div>
-	     	<div class="row">
-	     		<h1>Nombre d'habitants : ${pays.nbhabitants}</h1>
-	     	</div>
+	     	
      	</div>
 	     	
-
-
+		
 	</div>
 
 
