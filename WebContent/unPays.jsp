@@ -38,9 +38,12 @@
 		     		<h3>Continent : ${pays.nomContinent}</h3>
 		     		<h3>Capitale : ${pays.nomCapitale}</h3>
 		     		<h3>Nombre d'habitants : ${pays.nbhabitants}</h3>
+		     		<iframe style="border: 0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q&q=${pays.nomCapitale}" width="400" height="300" frameborder="0"></iframe>
+					<!--  mon api key google map
+					AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q -->
 		     	</div>
 		     	<div class="col-md-7">
-		     		<iframe style="border: 0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q&q=${pays.nomPays}" width="600" height="450" frameborder="0"></iframe>
+		     		<iframe style="border: 0;" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q&q=${pays.nomPays}" width="600" height="415" frameborder="0"></iframe>
 					<!--  mon api key google map
 					AIzaSyCfqg1Qvls1V8f4fDwUGoEY-jwUTctqF0Q -->
 		     	</div>
